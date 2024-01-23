@@ -1,0 +1,44 @@
+<!-- libro-form.component.html -->
+<div class="flex">
+    <div class="p-fluid p-3">
+        <form [formGroup]="libroForm" (ngSubmit)="onSubmit()" class="p-grid">
+            <div class="p-field p-col-12 p-md-6">
+                <label for="titulo">Título</label>
+                <input id="titulo" type="text" pInputText formControlName="titulo">
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="autor">Autor</label>
+                <input id="autor" type="text" pInputText formControlName="autor">
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="editorial">Editorial</label>
+                <input id="editorial" type="text" pInputText formControlName="editorial">
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="coleccion">Colección</label>
+                <input id="coleccion" type="text" pInputText formControlName="coleccion">
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="anho">Año</label>
+                <input id="anho" type="text" pInputText formControlName="anho">
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="notas">Notas</label>
+                <input id="notas" type="text" pInputText formControlName="notas">
+            </div>
+            <div class="p-field p-col-12 p-md-6">
+                <label for="singladura">Singladura</label>
+                <input id="singladura" type="text" pInputText formControlName="singladura">
+            </div>
+
+            <div class="p-field p-col-12">
+                <p-button type="submit" label="Guardar" [disabled]="!libroForm.valid"></p-button>
+            </div>
+        </form>
+    </div>
+
+    <div class="p-fluid p-3">
+        content
+
+    </div>
+</div>

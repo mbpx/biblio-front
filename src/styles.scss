@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+// @import "primeng/resources/themes/soho-light/theme.css";
+@import "primeng/resources/themes/viva-light/theme.css"; // 7 muy infantil
+// @import "primeng/resources/themes/nano/theme.css"; // 7 muy serio
+// @import "primeng/resources/themes/mira/theme.css";
+@import "primeng/resources/primeng.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "primeflex/primeflex.css";
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // background-color: #17212f;
+    // background: rgb(202, 202, 202);
+    // background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%);
+}
+
+.p-menubar .p-menuitem-link:not(.p-disabled):hover {
+    box-shadow: none;
+    background: #f6f9fc;
+}
+
+// .p-datatable .p-datatable-thead>tr>th {
+//     // background-color: #f7f8fb;
+// }
+.p-datatable.p-datatable-striped .p-datatable-tbody>tr:nth-child(even) {
+    background-color: white;
+}
+
+.p-datatable.p-datatable-striped .p-datatable-tbody>tr:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+.p-menubar {
+    border-radius: 0 !important;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-inputgroup .p-inputwrapper>.p-component {
+    flex: 1 1 auto;
+    width: 100%;
+    // border-bottom-left-radius: 0;
+    // border-top-left-radius: 0;
+}
+
+.p-inputgroup .p-inputwrapper>.p-autocomplete>.p-autocomplete-input {
+    padding-left: 15px;
+}
+
+.p-inputgroup .p-inputwrapper .p-inputtext {
+    padding: 0.6rem;
+}
